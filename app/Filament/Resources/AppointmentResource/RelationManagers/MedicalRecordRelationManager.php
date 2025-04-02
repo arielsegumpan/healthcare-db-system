@@ -157,30 +157,6 @@ class MedicalRecordRelationManager extends RelationManager
                         }
                     }
                 })
-                // ->mutateFormDataUsing(function (array $data): array {
-                //     // Get the current appointment
-                //     $appointment = Appointment::find($this->getOwnerRecord()->id);
-
-                //     if ($appointment) {
-                //         // Set student_id from the appointment
-                //         $data['student_id'] = $appointment->student_id;
-
-                //         $user = auth()->user();
-                //         $medicalStaff = MedicalStaff::where('user_id', $user->id)->first();
-
-                //         if ($medicalStaff) {
-                //             $data['staff_id'] = $medicalStaff->id;
-                //         }else{
-                //             $data['staff_id'] = $user->id;
-                //         }
-                //         $data['appointment_id'] = $appointment->id;
-
-                //         $appointment->update([
-                //             'status' => 'completed'
-                //         ]);
-                //     }
-                //     return $data;
-                // })
             ])
             ->actions([
                 // INDI PANI TAPOS RECONFIGURE ANG DATABASE DAPAT
@@ -299,26 +275,6 @@ class MedicalRecordRelationManager extends RelationManager
 
                         return $record;
                     }),
-                    // ->mutateFormDataUsing(function (array $data): array {
-                    //     // Get the current appointment
-                    //     $appointment = Appointment::find($this->getOwnerRecord()->id);
-
-                    //     dd($data['medical_record_num']);
-
-                    //     $appointment->update([
-                    //         'status' => 'completed'
-                    //     ]);
-
-                    //     return $data;
-                    // })
-                    // ->using(function (Model $record, array $data): Model {
-
-                    //     dd($data, $record);
-
-                    //     $record->update($data);
-
-                    //     return $record;
-                    // }),
 
                     Tables\Actions\DeleteAction::make(),
                 ])
