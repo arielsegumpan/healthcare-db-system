@@ -6,9 +6,7 @@
         <div>
             <a class="flex-none mx-auto text-xl font-semibold text-black dark:text-white" href="{{ route('welcome') }}" aria-label="Brand">
                 <div class="flex flex-row items-center justify-center gap-x-2">
-                    <img src="{{ asset('imgs/db_logo.png') }}" class="w-auto h-12" alt="{{ config('app.name') }}">
-
-                    <img src="{{ asset('imgs/ht-logo.png') }}" class="w-auto h-12" alt="{{ config('app.name') }}">
+                    <img src="{{ asset('imgs/csav-logo.png') }}" class="w-auto h-12" alt="{{ config('app.name') }}">
                 </div>
             </a>
         </div>
@@ -19,7 +17,7 @@
                Electronic Health Care Database and Treatment System. All Rights Reserved.
             </p>
             <p class="text-gray-500 dark:text-neutral-500">
-            © 2025 Don Bosco.
+            © 2025 Colegio de Sta.Ana de Victorias, Inc.
             </p>
         </div>
 

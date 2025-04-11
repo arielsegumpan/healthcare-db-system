@@ -4,7 +4,7 @@
     <div class="relative overflow-hidden">
         <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div class="max-w-2xl mx-auto text-center">
-            <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl dark:text-white">Welcome to the E-HC DB <span class="text-blue-600">Treatment System</span></h1>
+            <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl dark:text-white">Welcome to the CSAV E-HC DB <span class="text-lime-600">Treatment System</span></h1>
             <p class="mt-3 text-lg text-gray-800 dark:text-neutral-400">Your trusted digital platform for efficient, secure, and accurate healthcare management.</p>
         </div>
 

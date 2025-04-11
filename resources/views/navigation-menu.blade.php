@@ -4,9 +4,7 @@
     <div class="flex items-center justify-between gap-x-1">
         <a class="flex-none text-xl font-semibold text-black focus:outline-hidden focus:opacity-80 dark:text-white" href="{{ route('welcome') }}" aria-label="Brand">
             <div class="flex flex-row gap-x-2">
-                <img src="{{ asset('imgs/db_logo.png') }}" class="w-auto h-12" alt="{{ config('app.name') }}">
-
-                <img src="{{ asset('imgs/ht-logo.png') }}" class="w-auto h-12" alt="{{ config('app.name') }}">
+                <img src="{{ asset('imgs/csav-logo.png') }}" class="w-auto h-12" alt="{{ config('app.name') }}">
             </div>
         </a>
 
@@ -25,17 +23,12 @@
         <div class="py-2 md:py-0  flex flex-col md:flex-row md:items-center gap-0.5 md:gap-1">
             <div class="grow">
             <div class="flex flex-col md:flex-row md:justify-end md:items-center gap-0.5 md:gap-1">
-                <a class="flex items-center p-2 text-sm text-gray-800 bg-gray-100 rounded-lg lg:mx-3 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" href="{{ route('welcome') }}" aria-current="page">
+                <a class="flex items-center p-2 text-sm text-gray-800 rounded-lg lg:mx-3 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 {{ request()->routeIs('welcome') ? 'dark:bg-neutral-700 bg-gray-200' : '' }} dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" href="{{ route('welcome') }}" aria-current="{{ request()->routeIs('welcome') ? 'page' : '' }}">
                 <svg class="block shrink-0 size-4 me-3 md:me-2 md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
                     {{ __('Home') }}
                 </a>
-{{--
-                <a class="flex items-center p-2 text-sm text-gray-800 rounded-lg lg:mx-3 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" href="#!">
-                <svg class="block shrink-0 size-4 me-3 md:me-2 md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                    {{ __('Blog') }}
-                </a> --}}
 
-                <a class="flex items-center p-2 text-sm text-gray-800 rounded-lg lg:mx-3 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" href="{{ route('about') }}">
+                <a class="flex items-center p-2 text-sm text-gray-800 rounded-lg lg:mx-3 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 {{ request()->routeIs('about') ? 'dark:bg-neutral-700 bg-gray-200' : '' }}" href="{{ route('about') }}" aria-current="{{ request()->routeIs('about') ? 'page' : '' }}">
                 <svg class="block shrink-0 size-4 me-3 md:me-2 md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
                     {{ __('About') }}
                 </a>
@@ -82,14 +75,14 @@
 
                   </a>
 
-                <a class="py-2 px-2.5 inline-flex items-center font-medium text-sm rounded-lg bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:bg-blue-600" href="{{ route('filament.dashboard.auth.register') }}">
+                <a class="py-2 px-2.5 inline-flex items-center font-medium text-sm rounded-lg bg-lime-600 text-white hover:bg-lime-700 focus:outline-hidden focus:bg-lime-700 disabled:opacity-50 disabled:pointer-events-none dark:bg-lime-500 dark:hover:bg-lime-600 dark:focus:bg-lime-600" href="{{ route('filament.dashboard.auth.register') }}">
 
 
                     <svg class="shrink-0 size-5 me-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                     </svg>
 
-                    {{ __('Create Account') }}
+                    {{ __('Sign Up') }}
                 </a>
             </div>
             <!-- End Button Group -->

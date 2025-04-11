@@ -32,13 +32,13 @@ class DashboardPanelProvider extends PanelProvider
             ->path('dashboard')
             ->login()
             ->colors([
-                'primary' => Color::Sky,
+                'primary' => Color::Lime,
             ])
             ->font('Poppins')
             ->spa()
-            ->brandLogo(asset('imgs/ht-logo.png', true))
+            ->brandLogo(asset('imgs/csav-logo.png', true))
             ->brandLogoHeight('3rem')
-            ->favicon(asset('imgs/ht-logo.png'))
+            ->favicon(asset('imgs/csav-logo.png'))
             // ->registration(CustomRegister::class)
             ->registration(Register::class)
             ->sidebarCollapsibleOnDesktop(true)
